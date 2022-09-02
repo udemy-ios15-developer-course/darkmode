@@ -15,9 +15,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        overrideUserInterfaceStyle = .dark // keep in dark mode for this view controller only
         
-        
+        /*
+         go into info.plist
+            UserInterfaceStyle: Light or Dark
+         
+         This will impact all view controllers
+         */
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
